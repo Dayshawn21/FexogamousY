@@ -32,7 +32,7 @@ const ProductScreen = ({ history, match, imageUrl }) => {
 
 	return (
 		<>
-			<Link className='btn btn-light my-3' to='/'>
+			<Link className='btn btn-main button-color my-3' to='/'>
 				{' '}
 				Go Back
 			</Link>
@@ -44,7 +44,7 @@ const ProductScreen = ({ history, match, imageUrl }) => {
 			) : (
 				<Row>
 					<Col md={6}>
-						<Image src={imageUrl} alt={product.name} fluid />
+						<Image src={product.photo} alt={product.name} fluid />
 					</Col>
 					<Col md={3}>
 						<ListGroup variant='flush'>
@@ -100,8 +100,9 @@ const ProductScreen = ({ history, match, imageUrl }) => {
 
 								<ListGroup.Item>
 									<Button
+										variant='main'
 										onClick={addtoCartHander}
-										className='btn-block'
+										className='btn-block button-color'
 										type='button'
 										disabled={product.countInStock === 0}
 									>

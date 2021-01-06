@@ -52,7 +52,7 @@ const CartScreen = ({ match, location, history }) => {
 									<Row>
 										<Col md={2}>
 											<Image
-												src={item.image}
+												src={item.photo}
 												alt={item.name}
 												fluid
 												rounded
@@ -112,8 +112,9 @@ const CartScreen = ({ match, location, history }) => {
 
 							<ListGroup.Item>
 								<Button
+									variant='main'
 									type='button'
-									className='btn-block'
+									className='btn-block button-color'
 									disable={cartItems.length === 0}
 									onClick={checkoutHandler}
 								>

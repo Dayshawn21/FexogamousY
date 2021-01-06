@@ -15,11 +15,9 @@ const App = () => {
 			<Header />
 
 			<main className='py-3'>
-				<Container>
-					<Route path='/' component={HomeScreen} exact />
-					<Route path='/products/:id' component={ProductScreen} />
-					<Route path='/cart/:id?' component={CartScreen} />
-				</Container>
+				<Route path='/' component={HomeScreen} exact />
+				<Route path='/products/:id' component={ProductScreen} />
+				<Route path='/cart/:id?' component={CartScreen} />
 			</main>
 			<Footer />
 		</div>

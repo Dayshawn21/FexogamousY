@@ -89,8 +89,9 @@ const ProductScreenTwo = () => {
 
 									<ListGroup.Item>
 										<Button
+											variant='main'
 											onClick={addtoCartHander}
-											className='btn-block'
+											className='btn-block button-color'
 											type='button'
 											disabled={product.countInStock === 0}
 										>

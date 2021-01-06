@@ -1,28 +1,61 @@
 main {
-	min-height: 80vh;
+  min-height: 80vh;
+  background-color: white;
 }
 
 h3 {
-	padding: 1rem 0;
+  padding: 1rem 0;
+  color: gold;
 }
+
 h1 {
-	font-size: 1.8rem;
-	padding: 1rem 0;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  color: gold;
 }
+
 h2 {
-	font-size: 1.4rem;
-	padding: 0.5rem 0;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  color: gold;
 }
+
+p {
+  color: gold;
+}
+
+a {
+  color: gold;
+}
+
 .rating span {
-	margin: 0.1rem;
+  margin: 0.1rem;
 }
+
 img {
-	max-width: 100%;
-	height: 15%;
+  max-width: 100%;
+  height: 15%;
+}
+
+footer {
+  background-color: green;
+  color: gold;
 }
 
 footer i {
-	color: blue;
-	font-size: 2rem;
-	padding-left: 1rem;
+  color: blue;
+  font-size: 2rem;
+  padding-left: 1rem;
 }
+
+.shop-photo {
+  width: 1600px;
+  height: 600px;
+}
+
+.subcrible {
+  background: url("../src/images/flowers.jpg") no-repeat center right/cover;
+  height: 30vh;
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */

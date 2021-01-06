@@ -6,13 +6,14 @@ import {
 	PRODUCT_LIST_FAIL,
 	PRODUCT_LIST_REQUEST,
 	PRODUCT_LIST_SUCCESS,
+	PRODUCT_IMAGE_REQUEST,
 } from '../constants/productConstats';
 
 export const listProducts = () => async (dispatch) => {
 	try {
 		dispatch({ type: PRODUCT_LIST_REQUEST });
 
-		const { data } = await axios.get('http://localhost:1337/products');
+		const { data } = await axios.get('https://fexo.herokuapp.com/products');
 
 		dispatch({
 			type: PRODUCT_LIST_SUCCESS,
@@ -29,7 +30,9 @@ export const listProductsDetails = (id) => async (dispatch) => {
 	try {
 		dispatch({ type: PRODUCT_DETAILS_REQUEST });
 
-		const { data } = await axios.get(`http://localhost:1337/products/${id}`);
+		const { data } = await axios.get(
+			`https://fexo.herokuapp.com/products/${id}`,
+		);
 
 		dispatch({
 			type: PRODUCT_DETAILS_SUCCESS,

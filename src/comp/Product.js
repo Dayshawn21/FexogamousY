@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
+import { Image, Transformation } from 'cloudinary-react';
 
 import axios from 'axios';
 
 const Product = ({ product, image }) => {
-	const imageUrl =
-		process.env.NODE_ENV !== 'development'
-			? product.photo.url
-			: process.env.REACT_APP_BACKEND_URL + product.photo.url;
 	return (
-		<Card className='my-3 p-3 rounded'>
+		<Card bg='main' className='my-3 p-3 rounded'>
 			<Link to={`/products/${product._id}`}>
-				<Card.Img src={imageUrl} alt={product.name} fluid />
+				<Card.Img src={product.photo.url} alt={product.photo.url} fluid />
 			</Link>
 
 			<Card.Body>

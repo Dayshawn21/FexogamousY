@@ -6,7 +6,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 const Header = () => {
 	return (
 		<header>
-			<Navbar bg='success' variant='dark' expand='lg' collapseOnSelect>
+			<Navbar bg='main' variant='letter' expand='lg' collapseOnSelect>
 				<Container>
 					<LinkContainer to='/'>
 						<Navbar.Brand>Malachi Customs</Navbar.Brand>

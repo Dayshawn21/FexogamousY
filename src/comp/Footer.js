@@ -16,24 +16,10 @@ const Footer = () => {
 					<Col> Copyright &copy; MC</Col>
 					<Col>
 						{' '}
-						<h4>Follow us at</h4>
-						<i class='fab fa-facebook-square'></i>{' '}
-						<i class='fab fa-instagram'></i>
-					</Col>
-					<Col>
-						{' '}
-						<p> SUBSCRIBE TO OUR NEWSLETTER</p>
-						<InputGroup className='mb-3'>
-							<FormControl
-								aria-label='Default'
-								aria-describedby='inputGroup-sizing-default'
-							/>
-							<InputGroup.Append>
-								<Button className='btn-block' type='button'>
-									Submit
-								</Button>
-							</InputGroup.Append>
-						</InputGroup>
+						<h4>
+							Follow us at <i class='fab fa-facebook-square'></i>{' '}
+							<i class='fab fa-instagram'></i>
+						</h4>
 					</Col>
 				</Row>
 			</Container>
